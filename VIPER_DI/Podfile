@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'VIPER_DI' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Swinject', '~> 2.7.1'
+  pod 'Alamofire', '~> 4.8.2'
+  pod ‘Bolts-Swift’, :git => ’https://github.com/BoltsFramework/Bolts-Swift.git'
+  # Pods for VIPER_DI
+
+  target 'VIPER_DITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'VIPER_DIUITests' do
+    # Pods for testing
+  end
+
+end

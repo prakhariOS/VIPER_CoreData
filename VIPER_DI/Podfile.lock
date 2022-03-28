@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Bolts-Swift (1.5.0)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - Bolts-Swift (from `https://github.com/BoltsFramework/Bolts-Swift.git`)
+  - Swinject (~> 2.7.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Swinject
+
+EXTERNAL SOURCES:
+  Bolts-Swift:
+    :git: https://github.com/BoltsFramework/Bolts-Swift.git
+
+CHECKOUT OPTIONS:
+  Bolts-Swift:
+    :commit: 24fcb2d57a1df5c4ab8a48a925213b2c0b68dc78
+    :git: https://github.com/BoltsFramework/Bolts-Swift.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Bolts-Swift: afbbaf8c8186e7f769be4afa656949c14087ba44
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: 9885daf9886ac27b3608f5829fe3003dec0d998c
+
+COCOAPODS: 1.11.2

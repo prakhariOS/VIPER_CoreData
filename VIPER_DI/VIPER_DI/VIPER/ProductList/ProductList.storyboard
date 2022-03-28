@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product List View Controller Impl-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProductListViewControllerImpl" id="Y6W-OH-hqX" customClass="ProductListViewControllerImpl" customModule="VIPER_DI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="80" estimatedSectionHeaderHeight="80" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-0x-jdF">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-uD-ofh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74T-Pn-f6N">
+                                        <rect key="frame" x="132" y="15" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="bv0-QM-xKK"/>
+                                            <constraint firstAttribute="height" constant="50" id="yfc-Re-FrV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Companys">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="companysTouched:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YVb-Ai-fRw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="74T-Pn-f6N" firstAttribute="centerY" secondItem="eYN-uD-ofh" secondAttribute="centerY" id="JHp-9Q-d4n"/>
+                                    <constraint firstItem="74T-Pn-f6N" firstAttribute="centerX" secondItem="eYN-uD-ofh" secondAttribute="centerX" id="Ucp-OX-iaj"/>
+                                    <constraint firstAttribute="height" constant="80" id="ixq-KC-bhR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eYN-uD-ofh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="51s-E7-dVr"/>
+                            <constraint firstItem="FA4-0x-jdF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8Xa-Lm-qyX"/>
+                            <constraint firstItem="FA4-0x-jdF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Qum-OX-ctY"/>
+                            <constraint firstItem="FA4-0x-jdF" firstAttribute="top" secondItem="eYN-uD-ofh" secondAttribute="bottom" id="V9n-OO-Sik"/>
+                            <constraint firstItem="FA4-0x-jdF" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="l9q-wB-fJe"/>
+                            <constraint firstItem="eYN-uD-ofh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lMv-TG-vtR"/>
+                            <constraint firstItem="eYN-uD-ofh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xmc-GU-RPz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="productListTableView" destination="FA4-0x-jdF" id="jX8-oW-Lw6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
